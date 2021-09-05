@@ -8,7 +8,7 @@ def eratosthenesSieve(num) :
         num(int): 整数
 
     Returns:
-        list[bool]: 素数かどうかのリスト
+        list[bool]: 素数かどうかを列挙したリスト（1-indexed）
     """
 
     isPrime = list(True for _ in range(num + 1))

@@ -62,6 +62,7 @@ def fordFulkersonDepthFirstSearch(networkFlowGraph, now, end, nowFlow) :
 
     return 0
 
+
 class NetworkFlowGraph :
     """ ネットワークフローグラフ
 
@@ -90,7 +91,7 @@ class NetworkFlowGraph :
         self.graph[newReverseEdge.start].append(newReverseEdge)
 
     def runFlow(self, edge, flow) :
-        """ 辺にフローを流します。対応する更新辺にもフローを流します。
+        """ 辺にフローを流します。対応する後進辺にもフローを流します。
 
         Args:
             edge (Edge): 辺

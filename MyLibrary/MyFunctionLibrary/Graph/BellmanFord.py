@@ -45,7 +45,7 @@ def bellmanFord(graph, start) :
 
     return existNegativeCycle, distance, previous
 
-def makeRoot(previous, start, goal) :
+def makeRoute(previous, start, goal) :
     """ 最短経路の各頂点の前の頂点を格納する配列と始点と終点から、最短経路を作成します。
 
     Args:
@@ -57,17 +57,17 @@ def makeRoot(previous, start, goal) :
         list[int]: 最短経路
     """
     # 経路
-    root = list()
+    route = list()
 
     now = goal
 
     while now != start :
-        root.append(now)
+        route.append(now)
         now = previous[now]
 
-    root.append(start)
+    route.append(start)
 
-    return reversed(root)
+    return reversed(route)
 
 class Graph :
     """ グラフ

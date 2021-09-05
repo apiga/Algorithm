@@ -21,6 +21,3 @@ def eratosthenesSieve(num) :
                 isPrime[j] = False
 
     return isPrime
-
-
-

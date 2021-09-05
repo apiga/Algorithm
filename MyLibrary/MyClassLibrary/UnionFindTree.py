@@ -31,6 +31,7 @@ class UnionFindTree:
 
     def isSameTree(self, firstNode, secondNode):
         """ 2つの頂点が同じグループに属しているか判定します。
+            計算量 O(α(N))
 
         Args:
             firstNode (int): 1つ目の頂点
@@ -43,6 +44,7 @@ class UnionFindTree:
 
     def unite(self, firstNode, secondNode):
         """ 2つの頂点が所属するグループを結合します。
+            計算量 O(α(N))
 
         Args:
             firstNode (int): 1つめの頂点
@@ -67,6 +69,7 @@ class UnionFindTree:
 
     def getBelongGroupSize(self, node):
         """ 頂点が所属しているグループのサイズを返します。
+            計算量 O(1)
 
         Args:
             node (int): 頂点
@@ -78,6 +81,7 @@ class UnionFindTree:
 
     def getAllRoot(self):
         """ すべての根を返します。
+            計算量 O(N)
 
         Returns:
             list[int]: すべての根
